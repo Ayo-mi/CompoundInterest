@@ -14,9 +14,9 @@
 
         <TextView
             android:id="@+id/resTxt"
-            android:layout_width="404dp"
-            android:layout_height="147dp"
-            android:layout_marginBottom="4dp"
+            android:layout_width="481dp"
+            android:layout_height="142dp"
+            android:layout_marginBottom="28dp"
             android:text="Result"
             android:textAlignment="center"
             android:textColor="#0C0B0B"
@@ -24,7 +24,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintHorizontal_bias="0.616"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -64,7 +64,7 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/principalTxt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView1"
             app:layout_constraintVertical_bias="0.9" />
@@ -73,14 +73,14 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="62dp"
+            android:layout_marginTop="44dp"
             android:text="Compound Interest Calculator"
-            android:textColor="#4CAF50"
             android:textAlignment="center"
+            android:textColor="#4CAF50"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,7 +93,7 @@
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintHorizontal_bias="0.318"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             app:layout_constraintVertical_bias="0.5" />
@@ -107,21 +107,22 @@
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/btnCal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.325"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
             app:layout_constraintVertical_bias="0.5" />
 
         <Button
             android:id="@+id/btnCal"
-            android:layout_width="218dp"
-            android:layout_height="84dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="203dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="48dp"
             android:shadowColor="#424040"
             android:text="Compute"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/resTxt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
@@ -133,7 +134,7 @@
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toTopOf="@+id/textView5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
             app:layout_constraintVertical_bias="0.5" />
