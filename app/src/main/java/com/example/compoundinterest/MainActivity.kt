@@ -1,7 +1,9 @@
 package com.example.compoundinterest
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import com.example.compoundinterest.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
@@ -30,9 +32,7 @@ class MainActivity : AppCompatActivity() {
                 val initVal = (comp * p).toFloat()
                 val dec = DecimalFormat("#,###.00")
 
-                vieww.timeTxt.clearFocus()
-                vieww.principalTxt.clearFocus()
-                vieww.rateTxt.clearFocus()
+                closeKeyBoard()
 
                 vieww.resTxt.text = "Compound Interest: \n$${dec.format(comp)}\n\nInitial Value: \n$${dec.format(initVal)}"
             }catch (e: Exception){
@@ -42,5 +42,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    private fun closeKeyBoard() {
+        val view = this.currentFocus
+        if (view != null) {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(view.windowToken, 0)
+        }
     }
 }
